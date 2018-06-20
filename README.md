@@ -7,12 +7,9 @@ Directions:
   - Add MAC Addresses to mac_list.txt
     - make sure they are formatted correctly by running 'arp -n' and copy/paste from there.
   - Edit the variables in dynam_obj_upd.sh to match your needs
-      ## EDIT THE BELOW OPTIONS FOR YOUR NEEDS ##
-      IP_LIST=/path/to/ip_list.txt
-        ## NOTE: This file will be built where you direct it here. It does not need to be pre-built ##
-      MAC_LIST=/path/to/mac_list.txt
-      timeout=300  (this is how often you want the FW to poll the file for new IPs default is 5 min. Time is in seconds)
-      ## DO NOT MODIFY BELOW HERE ##
+    - IP_LIST=/path/to/ip_list.txt (NOTE: This file will be built where you direct it here. It does not need to be pre-built)
+    - MAC_LIST=/path/to/mac_list.txt
+    - timeout=300  (this is how often you want the FW to poll the file for new IPs default is 5 min. Time is in seconds)
   - mv dynam_obj_upd.sh $CPDIR/bin/
   - cd $CPDIR/bin
   - Execute Script:
